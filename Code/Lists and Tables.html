@@ -1,0 +1,197 @@
+<html>
+<head>
+<style>
+body {
+background-color: 44ffaa
+}
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 740px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+</head>
+<body>
+<h5>Version 0.0.2</h5>
+
+<h1 align=center>List-and-tables-by-Rielly</h1>
+
+<h2> Lists</h2>
+
+<ol> Ordered list of favourite numbers
+  <li>420
+  <li>42.0
+  <li>69
+  <li>6.9
+  <li>20
+</ol>
+
+<ul> Unordered list of meat
+  <li>Steak
+  <li>Beef
+  <li>Chicken
+  <li>Snail
+  <li>Turkey
+</ul>
+
+<ol>My favourite types of games
+  <li>Tactical Shooter
+<ul>
+  <li>Rainbow 6 Siege
+  <li>CS:GO
+  <li>C.O.D Cold War
+</ul>
+  <li>R.P.G
+<ul>
+  <li>God of War 2018
+  <li>Dark Souls Remastered
+  <li>Undertales
+  </ul>
+  <li>Sandbox
+<ul>
+  <li>Minecraft
+  <li>Terraria
+  <li>Worldbox
+</ol>
+
+<b>Assignment</b>. You make a list inside a list of
+multiple items<br>
+
+<h2> Tables </h2>
+(pssss hover mouse over the arrows)
+
+<table border=0>
+<tr><td>></td><td>></td><td>V</td></tr>
+<tr><td>V</td><td><</td><td><</td></tr>
+<tr><td>></td><td>></td><td>V</td></tr>
+<tr><td>V</td><td><</td><td><</td></tr>
+</table>
+
+
+<div class="popup" onclick="myFunction()">:O
+  <span class="popuptext" id="myPopup"><h1>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣠⠞⠉⢉⠩⢍⡙⠛⠋⣉⠉⠍⢉⣉⣉⣉⠩⢉⠉⠛⠲⣄⠀⠀⠀⠀
+⠀⠀⠀⡴⠁⠀⠂⡠⠑⠀⠀⠀⠂⠀⠀⠀⠀⠠⠀⠀⠐⠁⢊⠀⠄⠈⢦⠀⠀⠀
+⠀⣠⡾⠁⠀⠀⠄⣴⡪⠽⣿⡓⢦⠀⠀⡀⠀⣠⢖⣻⣿⣒⣦⠀⡀⢀⣈⢦⡀⠀
+⣰⠑⢰⠋⢩⡙⠒⠦⠖⠋⠀⠈⠁⠀⠀⠀⠀⠈⠉⠀⠘⠦⠤⠴⠒⡟⠲⡌⠛⣆
+⢹⡰⡸⠈⢻⣈⠓⡦⢤⣀⡀⢾⠩⠤⠀⠀⠤⠌⡳⠐⣒⣠⣤⠖⢋⡟⠒⡏⡄⡟
+⠀⠙⢆⠀⠀⠻⡙⡿⢦⣄⣹⠙⠒⢲⠦⠴⡖⠒⠚⣏⣁⣤⣾⢚⡝⠁⠀⣨⠞⠀
+⠀⠀⠈⢧⠀⠀⠙⢧⡀⠈⡟⠛⠷⡾⣶⣾⣷⠾⠛⢻⠉⢀⡽⠋⠀⠀⣰⠃⠀⠀
+⠀⠀⠀⠀⠑⢤⡠⢂⠌⡛⠦⠤⣄⣇⣀⣀⣸⣀⡤⠼⠚⡉⢄⠠⣠⠞⠁⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠉⠓⠮⣔⡁⠦⠀⣤⠤⠤⣤⠄⠰⠌⣂⡬⠖⠋⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠒⠤⢤⣀⣀⡤⠴⠒⠉⠀⠀⠀⠀⠀⠀⠀
+
+Youve Been Trolled⠀</h1>⠀⠀</span>
+</div>
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+<b>Assignment</b> Make a 3 x 4 table,
+then make a link and image table with border = 0<br><br><br>
+
+<table border=1>
+<tr><td>The Game</td><td>The Image of The Game</td><td>Link To The Game</td><td>Desription</td></tr>
+<tr><td>Rainbow 6 Siege</td><td><img src="R6.jpg"></td><td><a href="https://rainbowsix.fandom.com/wiki/Tom_Clancy%27s_Rainbow_Six_Siege">R6 Wiki</a></td><td>A 5 vs 5 game with the defenders protect the bomb<br> as an attacker attemps to defuse the bomb.</td></tr>
+<tr><td>CS:GO</td><td><img src="CSGO.jpg"></td><td><a href="https://counterstrike.fandom.com/wiki/Counter-Strike:_Global_Offensive">CS:GO Wiki</a></td><td>A 5 vs 5 game where counter terrorists go to place<br> the defuser to a bomb the other team terrorist made.</td></tr>
+<tr><td>Call of Duty Cold War</td><td><img src="COD.jpg"></td><td><a href="https://callofduty.fandom.com/wiki/Call_of_Duty:_Black_Ops_Cold_War">COD Cold War Wiki</a></td><td>Set in the time the actual cold war happened, its a gunner down game.</td></tr>
+<tr><td>God of War 2018</td><td><img src="GOW.jpg"></td><td><a href="https://en.wikipedia.org/wiki/God_of_War_(2018_video_game)">God of War Wiki</a></td><td>It is a game where you take your son to the tallest<br> mountain to spread your wifes ashes</td></tr>
+<tr><td>Dark Souls Remastered</td><td><img src="DarkSouls.jpg"></td><td><a href="https://darksouls.wiki.fextralife.com/Dark+Souls+Wiki">Dark Souls Wiki</a></td><td>The Dark Souls franchise is one of the hardest<br> games you'll ever play<br> with its boss after boss style<br> it will leave you in tears.</td></tr>
+<tr><td>UnderTale</td><td><img src="Undertale.jpg"></td><td><a href="https://undertale.fandom.com/wiki/Main_Page">Undertale Wiki</a> </td><td>A fun indie game with secrets<br> and pretty hard gameplay.</td></tr>
+<tr><td>Minecraft</td><td><img src="Minecraft.jpg"></td><td><a href="https://minecraft.fandom.com/wiki/Minecraft_Wiki">Minecraft Wiki</a></td><td>An adventure game where you<br> explore the overworld<br> and other dimensions.</td></tr>
+<tr><td>Terraria</td><td><img src="Terraria.jpg"></td><td><a href="https://terraria.fandom.com/wiki/Terraria_Wiki">Terraria Wiki</a></td><td>Terraria is a game where you can explore<br> the area killing mobs and bosses<br> with its hardest boss being a mod.</td></tr>
+<tr><td>Worldbox</td><td><img src="Worldbox.jpg"></td><td><a href="https://the-official-worldbox-wiki.fandom.com/wiki/The_Official_Worldbox_Wiki">Worldbox Wiki</a></td><td>This game simulates life<br> and your a god placing or destroying life.</td></tr>
+</table><br>
+
+<h2>Advanced</h2>
+
+Load an image and get it to move 10 pixles to the left using the button below<br>
+
+<image id="myImage01" src="SUS.png" style="position:relative; left:0; top:0; width:50; height:50; "><br>
+
+<input type=button value="STRETCH" onclick="{
+   document.getElementById('myImage01').style.left = '0px'
+   document.getElementById('myImage01').style.width = '250px'
+   document.getElementById('myDiv01').innerHTML = 'IT STRECHED!!!!'
+}">
+
+
+<input type=button value="shrink" onclick="{
+   document.getElementById('myImage01').style.left = '0px'
+   document.getElementById('myImage01').style.width = '50px'
+   document.getElementById('myDiv01').innerHTML = 'it became small :('
+}">
+
+<div id="myDiv01">...</div>
+
+<image id="myImage02" src="SUS.png" style="position:relative; left:0; top:0; width:50; height:50; "><br>
+
+<input type=button value="right" onclick="{
+   document.getElementById('myImage02').style.left = '200px'
+   document.getElementById('myDiv02').innerHTML = 'It moved <b>Right</b> :O'
+}">
+
+
+<input type=button value="left" onclick="{
+   document.getElementById('myImage02').style.left = '0px'
+   document.getElementById('myDiv02').innerHTML = 'It moved <b>left</b> :O'
+}">
+
+<div id="myDiv02">...</div>
+</body>
+</html>
